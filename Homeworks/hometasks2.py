@@ -81,27 +81,26 @@
 #     time.sleep(1)
 # print('happy hannukah')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import time
-name1 = input('give me your name')
-name2 = input('and your')
-moneyway = ' '
-if name1 == 'Boghdan' or 'Dima' and name2 == 'Dima' or 'Boghdan':
-    for moneyway in range(10, 0, -1):
-        time.sleep(1)
-        print(moneyway)
-    print('buy me a steak')
-elif name1 != 'Boghdan' or 'Dima' and name2 != 'Dima' or 'Boghdan':
-    print('zalupa tebe')
-name3 = input('and your')
-elif name3 == 'Danya' or 'Daniil':
-    for moneyway in range(10, 0, -9):
-        time.sleep(0)
-        print(moneyway)
-    print('what about you?')
-else:
-    print('zalupa tebe')
 
-
-
-
-
+for ttny in range(10, 1, -1):
+    print(ttny)
