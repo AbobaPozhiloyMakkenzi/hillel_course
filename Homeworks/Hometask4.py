@@ -8,6 +8,27 @@ for word in sentence:
             list += 1
 print(list)
 
+#OROROROROROR
+
+def check_word(word):
+    soglasniye = ['b', 'v', 's', 'd', 'n']
+    for i in range(len(word) - 1):
+        if word[i] in soglasniye and  word[i] == word[i+1]:
+            return True
+    return False
+
+def check_sentence():
+    sentence = input('your sentence').strip().split()
+    counter = 0
+
+    for word in sentence:
+        if check_word(word):
+            counter += 1
+    print(counter)
+
+
+check_sentence()
+
 # #task2 Напишіть код, який знайде і виведе на екран назви магазинів, ціни яких попадають в діапазон між мінімальною і максимальною ціною
 lower_limit = 35.9
 upper_limit = 37.339
