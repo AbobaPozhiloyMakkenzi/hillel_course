@@ -50,3 +50,33 @@
 #
 #
 # check_sentence()
+
+# если сумма чисел меньше 21 выводит - проиграл, если больше - проиграл, если 21 - выиграл
+# также, взять 3 игроков, у кого сумма выпала ближе к 21 - выиграл
+
+
+
+def plus(number1, number2, number3):
+    return(number1+number2+number3)
+
+
+decision_player1 = input('do you want to take cards? ')
+next_decision = print(input('do you want to take another one?'))
+
+if decision_player1 == 'yes':
+    cards = input('pick the card')
+elif next_decision == 'no':
+    pass
+if next_decision == 'yes':
+    player1cards = input('take another one')
+elif next_decision == 'no':
+     pass
+player1cards = plus()
+print(player1cards)
+
+# player2 = input('pick')
+# player3 = input('pick')
+
+# for player1cards in player1:
+#     var = (player1cards)
+#     print(var)
