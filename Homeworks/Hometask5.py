@@ -1,11 +1,8 @@
 Decision = input('Do you want to start a game?')
 if Decision == 'Yes'.lower().strip():
     while True:
-        available_letters = 'abcdefghijklmnopqrstyuwxvz'   #First_Method
-        word = input('give the task word').lower().strip() # or
-        for elementus in word:
-            if elementus not in available_letters:
-                break
+        available_letters = 'abcdefghijklmnopqrstyuwxvz'
+        word = input('give the task word').lower().strip() #First_Method
 
         # import random                                   #Second_Method
         # wordlist = ('kisa', 'Programming', 'MaTh')
@@ -23,11 +20,11 @@ if Decision == 'Yes'.lower().strip():
             if elementus not in available_letters:
                 print('Please, type your word in english and without any numbers!')
                 break
-            while guess_result != word:
+            while guess_result != word and  attempt_counter > 0:
 
                 print(f'Guess the word: {guess_result}')
 
-                while True:
+                while attempt_counter > 0:
                     user_letter = input('Enter the letter: ').lower()
                     if len(user_letter) != 1:
                         attempt_counter = attempt_counter - 1
@@ -42,20 +39,18 @@ if Decision == 'Yes'.lower().strip():
                         print(f'Duplicate! Now you have ----> {attempt_counter} attempts left')
                         continue
 
+
                     entered_letters.add(user_letter)
                     break
-
-
+                else:
+                    print(f'Incorrect! Try again! Now you have ----> {attempt_counter} attempts left')
                 if user_letter in word:
                     guessed_letters.append(user_letter)
                     guess_result = ''.join(['?' if char not in guessed_letters else char for char in word])
-                else:
-                    attempt_counter = attempt_counter - 1
-                    print(f'Incorrect! Try again! Now you have ----> {attempt_counter} attempts left')
 
-                # if guess_result == word:  # if not '?' in guess_result
-                #     print('Congratulations!')
-                #     break
+        if attempt_counter <= 1:
+            print('unfortunately, yo`ve lost')
+            break
         print(f'Congratulations! You guessed correctly, your word was -------> {word}')
         Question = input('do you want to play a new game?')
         if Question == 'no'.lower().strip():
