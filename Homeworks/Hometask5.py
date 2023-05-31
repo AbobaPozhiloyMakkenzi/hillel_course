@@ -2,6 +2,8 @@ Decision = input('Do you want to start a game?')
 if Decision == 'Yes'.lower().strip():
     while True:
         available_letters = 'abcdefghijklmnopqrstyuwxvz'
+        symbols = '!@#$%^&*()-_+=/\\:;[]{}`~'
+        numbers = '1234567890'
         word = input('give the task word').lower().strip() #First_Method
 
         # import random                                   #Second_Method
@@ -38,15 +40,20 @@ if Decision == 'Yes'.lower().strip():
                         attempt_counter = attempt_counter - 1
                         print(f'Duplicate! Now you have ----> {attempt_counter} attempts left')
                         continue
+                    else:
+                        if user_letter not in word or user_letter in symbols or user_letter in numbers:
 
+
+                            attempt_counter = attempt_counter - 1
+                            print(f'Incorrect! Try again! Now you have ----> {attempt_counter} attempts left')
 
                     entered_letters.add(user_letter)
                     break
-                else:
-                    print(f'Incorrect! Try again! Now you have ----> {attempt_counter} attempts left')
+
                 if user_letter in word:
                     guessed_letters.append(user_letter)
                     guess_result = ''.join(['?' if char not in guessed_letters else char for char in word])
+                    print(f'you guessed correctly, the letter {user_letter} is in {word}')
 
         if attempt_counter <= 1:
             print('unfortunately, yo`ve lost')
@@ -55,6 +62,3 @@ if Decision == 'Yes'.lower().strip():
         Question = input('do you want to play a new game?')
         if Question == 'no'.lower().strip():
             break
-
-
-
