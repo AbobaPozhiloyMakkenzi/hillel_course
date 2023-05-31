@@ -81,8 +81,15 @@
 #     var = (player1cards)
 #     print(var)
 
-myTuple = ("John", "Peter", "Vicky")
+# myTuple = ("John", "Peter", "Vicky")
+#
+# x = "#".join(myTuple)
+#
+# print(x)
 
-x = "#".join(myTuple)
-
-print(x)
+word = 'mama'
+for letter in list(word):
+    if letter == 'm':
+        for letter in range(len(word)):
+            if letter == word[0:-1]:
+                print(letter)

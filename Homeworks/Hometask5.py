@@ -1,4 +1,10 @@
 Decision = input('Do you want to start a game?')
+# def words(letter):
+#     for  letter in list(word):
+#         res = word.find(letter)
+#
+#         return res
+
 if Decision == 'Yes'.lower().strip():
     while True:
         available_letters = 'abcdefghijklmnopqrstyuwxvz'
@@ -53,12 +59,13 @@ if Decision == 'Yes'.lower().strip():
                 if user_letter in word:
                     guessed_letters.append(user_letter)
                     guess_result = ''.join(['?' if char not in guessed_letters else char for char in word])
-                    print(f'you guessed correctly, the letter {user_letter} is in {word}')
+                    print(f'you guessed correctly, the letter {user_letter} is the {word.find(user_letter)+1} in your word')
 
         if attempt_counter <= 1:
             print('unfortunately, yo`ve lost')
             break
-        print(f'Congratulations! You guessed correctly, your word was -------> {word}')
+        print(f'Congratulations! You guessed correctly, your word was  -------> {word}')
         Question = input('do you want to play a new game?')
         if Question == 'no'.lower().strip():
             break
+
