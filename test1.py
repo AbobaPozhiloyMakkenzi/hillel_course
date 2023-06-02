@@ -85,11 +85,33 @@
 #
 # x = "#".join(myTuple)
 #
-# print(x)
+# print(x)'
 
-word = 'mama'
-for letter in list(word):
-    if letter == 'm':
-        for letter in range(len(word)):
-            if letter == word[0:-1]:
-                print(letter)
+# age = input('--->: ')
+#
+# # age = 10 / int(age)
+#
+# try:
+#     age = 10 / int(age)
+# except ValueError:
+#     print('wrong data ! should be number')
+# except Exception as x :
+#     print(f'wrong data!{type(x)}')
+#
+# print(age)
+#
+
+
+# def mamamia(*himars):
+#     res = (himars[0] + himars[1])*himars[2]-himars[3]
+#     return res
+# my_res = mamamia(1,2,3,4)
+# print(my_re
+
+
+my_lis=[1,2,3]
+jerk = 'kurwa'
+
+tuple(my_lis, jerk)
+print(tuple)
+print(type(tuple))

@@ -68,4 +68,3 @@ if Decision == 'Yes'.lower().strip():
         Question = input('do you want to play a new game?')
         if Question == 'no'.lower().strip():
             break
-
