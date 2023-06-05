@@ -51,14 +51,15 @@ while machine_win_counter < 3 and man_win_counter < 3:
     """
     players_choice = input('rock, paper, scissors, 3.... 2..... 1....').strip().lower()
     game_elements = ['paper', 'rock', 'scissors']
+    pick = random.choice(game_elements)
+
     if players_choice not in game_elements:
         break  # paper beats rock, scissors beat paper, rock beats scissors
 
-    pick = random.choice(game_elements)
-
     logics(players_choice, pick)
+
     question = input('do you want to continue?')
-    if question == 'no':
+    if question != 'yes':
         break
 
 
