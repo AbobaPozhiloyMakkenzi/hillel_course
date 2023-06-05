@@ -61,4 +61,22 @@
 # else:
 #     print('there are no tikcets left')
 
+userinput = input('type')
+determiner = (int(userinput)%10)
+def teens(range1):
+    list1 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    for i in list1:
+        if i == range1:
+            res = 'років'
+            return res
+teens(int(userinput))
+def age1(age_ps):
+    if age_ps == 2 or age_ps ==3 or age_ps == 4:
+        res = 'роки'
+        return res
+    if age_ps == 1:
+        res = 'рік'
+        return res
+print(age1(determiner))
 
+print(int(userinput))
