@@ -5,6 +5,9 @@ man_win_counter = 0
 
 
 def man_goals():
+    """
+    counting user`s goals
+    """
     global machine_win_counter
     global man_win_counter
     man_win_counter = man_win_counter + 1
@@ -12,6 +15,9 @@ def man_goals():
 
 
 def machine_goals():
+    """
+    counting machines`s goals
+    """
     global machine_win_counter
     global man_win_counter
     machine_win_counter = machine_win_counter + 1
@@ -19,6 +25,12 @@ def machine_goals():
 
 
 def logics(el1,el2):
+    """
+    game logic
+    :param el1: userinput
+    :param el2: machine_random_choice
+    :return: compare result
+    """
     global machine_win_counter
     global man_win_counter
     print(f'machine choise is {pick}')
@@ -33,6 +45,10 @@ def logics(el1,el2):
 
 
 while machine_win_counter < 3 and man_win_counter < 3:
+    """
+    engine of the game 
+    data source(players choice, machine element randomizer), game rules and user input control.
+    """
     players_choice = input('rock, paper, scissors, 3.... 2..... 1....').strip().lower()
     game_elements = ['paper', 'rock', 'scissors']
     if players_choice not in game_elements:
