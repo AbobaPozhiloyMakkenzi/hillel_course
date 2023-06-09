@@ -74,5 +74,3 @@ def game():
 
             break
 print(game())
-
-
