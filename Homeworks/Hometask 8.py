@@ -4,10 +4,11 @@ import time
 def time_counter(funct):
     def wrapper():
         time_start = time.time()
-        funct()
+        function_result = funct()
         time_end = time.time()
         result = (time_end - time_start)
-        return result
+        print(result)
+        return function_result
     return wrapper
 
 machine_win_counter = 0
@@ -73,4 +74,4 @@ def game():
         if question != 'yes':
 
             break
-print(game())
+game()
