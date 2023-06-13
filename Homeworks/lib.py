@@ -3,6 +3,7 @@ import random
 machine_win_counter = 0
 man_win_counter = 0
 
+
 def time_counter(funct):
     def wrapper():
         time_start = time.time()
@@ -12,6 +13,7 @@ def time_counter(funct):
         print(result)
         return function_result
     return wrapper
+
 
 def man_goals():
     """
@@ -32,6 +34,7 @@ def machine_goals():
     machine_win_counter = machine_win_counter + 1
     print(f'{man_win_counter} : {machine_win_counter}')
 
+
 def logics(el1,el2,pick):
     """
     game logic
@@ -49,6 +52,7 @@ def logics(el1,el2,pick):
     if el1 == el2:
         print('It`s a draw!')
 
+
 @time_counter
 def game():
     while machine_win_counter < 3 and man_win_counter < 3:
@@ -58,10 +62,13 @@ def game():
         """
         players_choice = input('rock, paper, scissors, 3.... 2..... 1....').strip().lower()
         game_elements = ['paper', 'rock', 'scissors']
+
         pick = random.choice(game_elements)
 
         if players_choice not in game_elements:
-            break  # paper beats rock, scissors beat paper, rock beats scissors
+            print('Please, type only paper, rock or scissors')
+            break # paper beats rock, scissors beat paper, rock beats scissors
+
 
         logics(players_choice, pick,pick)
 
