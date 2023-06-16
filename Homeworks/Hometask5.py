@@ -10,14 +10,14 @@ if Decision == 'Yes'.lower().strip():
         available_letters = 'abcdefghijklmnopqrstyuwxvz'
         symbols = '!@#$%^&*()-_+=/\\:;[]{}`~'
         numbers = '1234567890'
-        word = input('give the task word').lower().strip() #First_Method
+#         word = input('give the task word').lower().strip() #First_Method
 
-        # import random                                   #Second_Method
-        # wordlist = ('kisa', 'Programming', 'MaTh')
-        # want = random.choice(wordlist)
-        # want = str(want).lower().strip()
-        #
-        # word = want
+        import random                                   #Second_Method
+        wordlist = ('kisa', 'Programming', 'MaTh', 'Pidoras', 'Zalupa')
+        want = random.choice(wordlist)
+        want = str(want).lower().strip()
+
+        word = want
 
         guess_result = '?' * len(word)
         guessed_letters = []

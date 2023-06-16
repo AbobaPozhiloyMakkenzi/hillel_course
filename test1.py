@@ -41,13 +41,67 @@
 # x = 5
 # res = map(lambda numbers:numbers*5, numbers)
 # for i in res:
+# #     print(i)
+#
+# my_friends_list = [('Sanya', 21),("Danya", 22),("Bogdan", 13), ('oleg',13)]
+#
+# func = lambda my_friends_list: my_friends_list[1] >= 18
+#
+# allow_to_drink = filter(func, my_friends_list)
+#
+# for i in allow_to_drink:
 #     print(i)
 
-my_friends_list = [('Sanya', 21),("Danya", 22),("Bogdan", 13), ('oleg',13)]
+import time
+# import threading
+from multiprocessing import cpu_count, Process
 
-func = lambda my_friends_list: my_friends_list[1] >= 18
+def countdown(arg):
+    number = 0
+    while number <= arg:
+        number += 1
 
-allow_to_drink = filter(func, my_friends_list)
+def main():
+    a = Process(target=countdown(250000000))
+    b = Process(target= countdown(250000000))
+    c = Process(target= countdown(250000000))
+    d = Process(target= countdown(250000000))
 
-for i in allow_to_drink:
-    print(i)
+    time1 = time.perf_counter()
+    a.start()
+    b.start()
+    c.start()
+    d.start()
+    d.join()
+    a.join()
+    b.join()
+    c.join()
+    time2 = time.perf_counter()
+    result = (time2 - time1)
+    print(result)
+
+if __name__ == '__main__':
+    main()
+
+
+
+
+
+
+
+# def timer():
+#     print()
+#     print()
+#     counter = 0
+#     while True:
+#         time.sleep(1)
+#         counter += 1
+#         print(f'you have been logged for {counter} seconds')
+#
+#
+# x = threading.Thread(target=timer, daemon=True)
+#
+#
+# x.start()
+#
+# rabor = input('wannaaaa')
