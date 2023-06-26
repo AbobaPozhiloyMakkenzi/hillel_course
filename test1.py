@@ -1,16 +1,3 @@
-# from abc import ABC, abstractmethod
-# class vehicle(ABC):
-#     @abstractmethod
-#     def ride(self):
-#         pass
-# class car(vehicle):
-#     def ride(self):
-#         print('the car is driving')
-#
-# class morotbike(vehicle):
-#     pass
-# car = car()
-# bike = morotbike()
 
 # element = input('Bring smth in')
 #
@@ -52,36 +39,36 @@
 # for i in allow_to_drink:
 #     print(i)
 
-import time
-# import threading
-from multiprocessing import cpu_count, Process
-
-def countdown(arg):
-    number = 0
-    while number <= arg:
-        number += 1
-
-def main():
-    a = Process(target=countdown(250000000))
-    b = Process(target= countdown(250000000))
-    c = Process(target= countdown(250000000))
-    d = Process(target= countdown(250000000))
-
-    time1 = time.perf_counter()
-    a.start()
-    b.start()
-    c.start()
-    d.start()
-    d.join()
-    a.join()
-    b.join()
-    c.join()
-    time2 = time.perf_counter()
-    result = (time2 - time1)
-    print(result)
-
-if __name__ == '__main__':
-    main()
+# import time
+# # import threading
+# from multiprocessing import cpu_count, Process
+#
+# def countdown(arg):
+#     number = 0
+#     while number <= arg:
+#         number += 1
+#
+# def main():
+#     a = Process(target=countdown(250000000))
+#     b = Process(target= countdown(250000000))
+#     c = Process(target= countdown(250000000))
+#     d = Process(target= countdown(250000000))
+#
+#     time1 = time.perf_counter()
+#     a.start()
+#     b.start()
+#     c.start()
+#     d.start()
+#     d.join()
+#     a.join()
+#     b.join()
+#     c.join()
+#     time2 = time.perf_counter()
+#     result = (time2 - time1)
+#     print(result)
+#
+# if __name__ == '__main__':
+#     main()
 
 
 
@@ -104,4 +91,51 @@ if __name__ == '__main__':
 #
 # x.start()
 #
-# rabor = input('wannaaaa')
+
+
+
+
+
+
+
+
+
+import time
+from tkinter import *
+def click():
+    for i in range(10, -1, -1):
+        time.sleep(1)
+        print(i)
+    while True:
+        print('VSTAVAY ZALUPA!')
+
+
+
+
+
+window = Tk()
+window.geometry('1200x1200')
+window.title('Vstavay')
+icon = PhotoImage(file='fut.png')
+window.iconphoto(True, icon)
+window.config(background='light blue')
+
+photo = PhotoImage(file = 'C:\\Users\\naddi\\Downloads\\dog.png')
+label = Label(window,text = 'hello',
+              bg='blue',
+              fg='red',
+              font=('Times new Roman', 75, 'bold'),
+              relief=RAISED,
+              bd=10,
+              padx= 20,
+              pady= 20,
+              image=photo,
+              compound='top')
+button = Button(window, text = 'click', command=click, font='Calibri',fg='black', background= 'blue', activeforeground='midnight blue', activebackground='blue')
+button.pack()
+
+
+label.place(x=650,y=0)
+
+
+window.mainloop()
