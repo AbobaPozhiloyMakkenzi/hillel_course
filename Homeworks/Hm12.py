@@ -45,12 +45,10 @@ class Triangle:
 
     @vershiny.setter
     def vershiny(self,value):
-
         for i in value:
             if not isinstance(i, Point):
                 raise TypeError
             else:
-                print('checking accomplished')
                 self._vershiny = value
 
 
@@ -85,7 +83,5 @@ p3 = Point(0, 0)
 treygolnik = Triangle(p1,p2,p3)
 
 print(treygolnik.plosha())
-
-
 for i in treygolnik:
     print(i)

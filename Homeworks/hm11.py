@@ -17,7 +17,7 @@ class Point:
 
 class Line:
     def __init__(self, begin, end):
-        if isinstance(begin, Point) or isinstance(end, Point):
+        if isinstance(begin, Point) and isinstance(end, Point):
             self.begin_point = begin
             self.end_point = end
         else:

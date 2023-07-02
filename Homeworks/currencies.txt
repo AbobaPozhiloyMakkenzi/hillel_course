@@ -1,0 +1,61 @@
+1) Австралійський долар to UAH currency: 24.2084 
+2) Канадський долар to UAH currency: 27.5584 
+3) Юань Женьміньбі to UAH currency: 5.031 
+4) Чеська крона to UAH currency: 1.6711 
+5) Данська крона to UAH currency: 5.3301 
+6) Гонконгівський долар to UAH currency: 4.6662 
+7) Форинт to UAH currency: 0.106695 
+8) Індійська рупія to UAH currency: 0.44576 
+9) Рупія to UAH currency: 0.0024272 
+10) Новий ізраїльський шекель to UAH currency: 9.8155 
+11) Єна to UAH currency: 0.25269 
+12) Теньге to UAH currency: 0.081091 
+13) Вона to UAH currency: 0.027747 
+14) Мексиканське песо to UAH currency: 2.1404 
+15) Молдовський лей to UAH currency: 2.0045 
+16) Новозеландський долар to UAH currency: 22.2301 
+17) Норвезька крона to UAH currency: 3.3925 
+18) Російський рубль to UAH currency: 0.41342 
+19) Сінгапурський долар to UAH currency: 26.96 
+20) Ренд to UAH currency: 1.9256 
+21) Шведська крона to UAH currency: 3.3611 
+22) Швейцарський франк to UAH currency: 40.5844 
+23) Єгипетський фунт to UAH currency: 1.1836 
+24) Фунт стерлінгів to UAH currency: 46.2538 
+25) Долар США to UAH currency: 36.5686 
+26) Білоруський рубль to UAH currency: 13.2919 
+27) Азербайджанський манат to UAH currency: 21.5591 
+28) Румунський лей to UAH currency: 7.997 
+29) Турецька ліра to UAH currency: 1.4037 
+30) СПЗ (спеціальні права запозичення) to UAH currency: 48.6495 
+31) Болгарський лев to UAH currency: 20.2945 
+32) Євро to UAH currency: 39.6952 
+33) Злотий to UAH currency: 8.9436 
+34) Алжирський динар to UAH currency: 0.26998 
+35) Така to UAH currency: 0.33719 
+36) Вірменський драм to UAH currency: 0.094723 
+37) Домініканське песо to UAH currency: 0.66264 
+38) Іранський ріал to UAH currency: 0.00087068 
+39) Іракський динар to UAH currency: 0.027915 
+40) Сом to UAH currency: 0.41936 
+41) Ліванський фунт to UAH currency: 0.002438 
+42) Лівійський динар to UAH currency: 7.6042 
+43) Малайзійський ринггіт to UAH currency: 7.8372 
+44) Марокканський дирхам to UAH currency: 3.6922 
+45) Пакистанська рупія to UAH currency: 0.12768 
+46) Саудівський ріял to UAH currency: 9.7485 
+47) Донг to UAH currency: 0.0015521 
+48) Бат to UAH currency: 1.03225 
+49) Дирхам ОАЕ to UAH currency: 9.9558 
+50) Туніський динар to UAH currency: 11.8169 
+51) Узбецький сум to UAH currency: 0.0031832 
+52) Новий тайванський долар to UAH currency: 1.1738 
+53) Туркменський новий манат to UAH currency: 10.4482 
+54) Сербський динар to UAH currency: 0.33862 
+55) Сомоні to UAH currency: 3.3506 
+56) Ларі to UAH currency: 13.9976 
+57) Бразильський реал to UAH currency: 7.5332 
+58) Золото to UAH currency: 69676.35 
+59) Срібло to UAH currency: 819.96 
+60) Платина to UAH currency: 32668.92 
+61) Паладій to UAH currency: 44842.61 
